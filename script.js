@@ -45,8 +45,9 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;  
 }
 
-btncopiar.addEventListener("click", e=>{
-    e.preventDefault();
-    let copiar=mensaje;
-    copiar.select();
-});
+function Copiar(){
+    var copytext= document.getElementById("mensaje");
+    copytext.select();
+    navigator.clipboard.writeText(copytext.value);
+    alert("Texto Copiado:" +copytext.value);
+}
