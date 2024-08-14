@@ -45,7 +45,7 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;  
 }
 
-function Copiar(){
+function copiar(){
     var copytext= document.getElementById("mensaje");
     copytext.select();
     navigator.clipboard.writeText(copytext.value);
