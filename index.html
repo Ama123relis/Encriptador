@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <h1>Encriptador</h1> -->
+    <header>
+        <img class="logo" src="./assets/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section class="section-enc">
+            <textarea class="text-area" id="texto" cols="30" rows="10" placeholder="Ingrese el Texto aqui"></textarea>
+            <div class="aviso">
+                <img class="circulo_exclamacion" src="./assets/bi_exclamation-circle-fill.png">
+                <h6 class="informacion" >Solo palabras  minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-des">
+            <textarea class="mensaje" id="mennsaje" cols="20" rows="11" ></textarea>
+            <div >
+                <button class="copiar">Copiar</button>
+            </div>         
+        </section>
+    </main>
+    <script src="/script.js"></script>
+    <footer>
+        <p class="copyright">&copy; copyright 2024 - Encriptador de texto - desarrollado por Amarelis Ortiz</p>
+        <a href="#" rel="">
+            <img src="./assets/linkedin.png" alt="logo linkedin" class="linkked"
+        </a>
+        <a href="#" rel="">
+            <img src="./assets/github.png" alt="logo github" class="git"
+        </a></footer>
+</body>
+</html> 
